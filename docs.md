@@ -1,6 +1,7 @@
 # Design Patterns JS
 
 **[Behavioral](#behavioral)**
+
 * [Chain Of Resp](#chain-of-resp)
 * [Command](#command)
 * [Interpreter](#interpreter)
@@ -28,6 +29,8 @@
 * [Facade](#facade)
 * [Flyweight](#flyweight)
 * [Proxy](#proxy)
+
+**[Design principles](#Design principles)**
 
 
 
@@ -966,6 +969,8 @@ class Employee {
   }
 }
 
+## Design principles
+
 class Manager extends Employee {
   constructor(salary) {
     super(salary);
@@ -1816,5 +1821,29 @@ export {
 
 ```
 
+## Design principles
+> 设计原则：设计模式所遵循的前提，[参考](http://www.uml.org.cn/sjms/201211023.asp#1)
 
+### Single Responsiblity Principle
 
+> 单一职责原则：不要存在多于一个导致类变更的原因。通俗的说，一个类只负责一项职责
+
+### Open Close Principle
+
+> 开闭原则：一个软件实体如类、模块和函数应该对扩展开放，对修改关闭
+
+### Liskov Substitution Principle
+
+> 里氏替换原则：所有引用基类的地方必须能透明的使用其子类的对象
+
+### Interface Segregation Principle
+
+> 接口隔离原则：客户端不应该依赖不需要的接口；一个类对另一个类的依赖应该建立在最小的接口上
+
+### Dependency Inversion Principle
+
+> 依赖倒置原则：高层模块不应该依赖低层模块，二者应该依赖其抽象；抽象不应该依赖细节，细节应该依赖抽象
+
+### Law of Demeter
+
+> 迪米特原则(最少知道原则)：一个对象应该对其他对象保持最少的了解
